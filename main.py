@@ -311,7 +311,7 @@ compiled = graph.compile()
 # Inital State, Beginn des Workflows
 initial_state: NutritionState = {
     # Man muss alles in Gramm angeben, sonst bekommt er Probleme!
-    "meal_description": "Heute habe ich 200g Nutella und dazu 60g Ja! Schokolade vernascht",
+    "meal_description": "Heute habe ich 200g Nutella und dazu 60g Ja! Schokolade vernascht. Danach hatte ich noch 100 Gramm Apfel",
     "food_items": [],
     "nutrition_info": [],
     "messages": [],
