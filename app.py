@@ -1,6 +1,6 @@
 import streamlit as st
 from langgraph.graph import StateGraph
-from main import compiled  # <- Hier importierst du deinen Workflow
+from main import compiled 
 
 # Titel der App
 st.title("🍽️ KI-Nährwertanalyse Bot")
