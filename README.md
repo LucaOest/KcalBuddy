@@ -1,6 +1,8 @@
 # KcalBuddy
 AI workflow that helps tracking your food
 
+ONLY WORKS WITH QUANTITIES IN GRAMS!
+
 Install:
 
 pip install streamlit

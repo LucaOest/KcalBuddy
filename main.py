@@ -126,6 +126,7 @@ def get_nutrition_info(state: NutritionState) -> NutritionState:
             })
             continue
 
+        # Daten durch OpenFoodFacts ermitteln
         url = "https://world.openfoodfacts.org/cgi/search.pl"
         params = {
             "search_terms": product_name,
@@ -276,21 +277,6 @@ def get_kcal_for_basic_food(product_name: str):
     if kcal_per_100g is None:
         return None  # Kein Wert vorhanden
     return kcal_per_100g
-
-"""
-# Hilfsfunktion, extrahiert aus Text die erste gültige JSON-Zeile
-def clean_json_response(text: str) -> str:
-    #Extrahiert die erste gültige JSON-Liste aus einem beliebigen Text.
-    match = re.search(r'\[\s*{.*?}\s*\]', text, re.DOTALL)
-    if match:
-        return match.group(0)
-    return text.strip()
-
-def multiply(a, b):
-    return a * b
-"""
-
-
 
 
 # Graph definieren
